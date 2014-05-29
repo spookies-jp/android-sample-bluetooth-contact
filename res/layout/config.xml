@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<ImageView android:id="@+id/imageView1" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:layout_gravity="center"
+		android:src="@drawable/bg_config"></ImageView>
+	<LinearLayout android:orientation="vertical" android:id="@+id/linearLayout1"
+		android:layout_gravity="top" android:layout_height="fill_parent"
+		android:background="@color/semitransparent" android:gravity="center_horizontal"
+		android:layout_marginLeft="30dp" android:layout_marginRight="30dp"
+		android:layout_marginTop="20dp" android:layout_width="fill_parent">
+		<Button android:id="@+id/button2" android:onClick="onSelectContactButtonClicked"
+			android:text="@string/button_select_contact" android:layout_height="wrap_content"
+			android:layout_width="fill_parent" android:layout_marginLeft="30dp"
+			android:layout_marginRight="30dp"></Button>
+		<ListView android:layout_width="fill_parent" android:id="@+id/contact_list_config"
+			android:layout_height="wrap_content" android:cacheColorHint="@color/transparent"
+			android:listSelector="@color/transparent" android:layout_marginTop="10dp"
+			android:layout_marginBottom="10dp"></ListView>
+	</LinearLayout>
+</FrameLayout>
